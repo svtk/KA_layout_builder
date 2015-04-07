@@ -27,12 +27,12 @@ dependencies {
     compile fileTree(dir: 'libs', include: ['*.jar'])
     compile 'com.android.support:appcompat-v7:21.0.3'
     compile "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
-    compile files('libs/koan-19-0.3.1.jar')
+    compile 'org.jetbrains.anko:anko:0.5-19'
 }
 buildscript {
     ext.kotlin_version = '0.11.91'
     repositories {
-        mavenCentral()
+        jcenter()
     }
     dependencies {
         classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
@@ -44,5 +44,8 @@ buildscript {
     }
 }
 repositories {
-    mavenCentral()
+    jcenter()
+    maven { url "http://dl.bintray.com/yanex/kotlin" }
+
+    maven { url "https://bintray.com/yanex/kotlin/anko/0.5-19/view" }
 }

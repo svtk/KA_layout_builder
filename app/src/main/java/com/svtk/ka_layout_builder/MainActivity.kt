@@ -12,7 +12,7 @@ public class MainActivity : ActionBarActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        romeClock.setTimeZone(TimeZone.ROME)
+        philadelphiaClock.setTimeZone(TimeZone.PHILADELPHIA)
         spbClock.setTimeZone(TimeZone.SPB)
     }
 }

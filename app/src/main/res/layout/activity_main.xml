@@ -13,14 +13,14 @@
         android:layout_height="fill_parent">
 
         <TextView
-            android:id="@+id/romeTime"
+            android:id="@+id/philadelphiaTime"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_column="1"
-            android:text="@string/romeTime" />
+            android:text="@string/philadelphiaTime" />
 
         <TextClock
-            android:id="@+id/romeClock"
+            android:id="@+id/philadelphiaClock"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_column="2"
