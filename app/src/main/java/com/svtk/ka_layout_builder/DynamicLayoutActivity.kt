@@ -1,31 +1,46 @@
 package com.svtk.ka_layout_builder
 
-import android.support.v7.app.ActionBarActivity
+import android.app.Activity
 import android.os.Bundle
-import kotlinx.android.koan.*
+import android.view.View
+import android.widget.TextView
+import kotlinx.android.anko.*
 
 
-public class DynamicLayoutActivity : ActionBarActivity() {
+public class DynamicLayoutActivity : Activity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
         tableLayout {
-            layoutParams(matchParent, matchParent)
+
             for (location in locations) {
                 tableRow {
-                    textView(text = location.name) {
-                        layoutParams(column = 1)
-                    }
 
-                    val textClock = textClock {
+                    textView(text = location.name).layoutParams(column = 1)
+
+                    textClock {
                         id = location.id
-                        layoutParams(column = 2) {
-                            leftMargin = dip(20)
-                        }
-                    }
-                    textClock.setTimeZone(location.timeZone)
+                    }.layoutParams(column = 2) {
+                        leftMargin = dip(20)
+                    }.setTimeZone(location.timeZone)
                 }
+            }
+        }.style(textSize = 25F)
+    }
+
+
+
+
+
+
+
+    fun View.style(textSize: Float) {
+        style {
+            view: View ->
+
+            when (view) {
+                is TextView -> view.textSize = textSize
             }
         }
     }
