@@ -1,6 +1,6 @@
 package com.svtk.ka_layout_builder
 
 object TimeZone {
-    val PHILADELPHIA = "Etc/GMT+4"
+    val BERLIN = "Etc/GMT-2"
     val SPB = "Etc/GMT-3"
 }

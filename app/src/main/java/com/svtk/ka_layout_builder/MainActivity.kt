@@ -1,18 +1,17 @@
 package com.svtk.ka_layout_builder
 
-import android.support.v7.app.ActionBarActivity
+import android.app.Activity
 import android.os.Bundle
-import android.widget.TextClock
+import kotlinx.android.synthetic.activity_main.berlinClock
+import kotlinx.android.synthetic.activity_main.spbClock
 
-import kotlinx.android.synthetic.activity_main.*
-
-public class MainActivity : ActionBarActivity() {
+public class MainActivity : Activity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        philadelphiaClock.setTimeZone(TimeZone.PHILADELPHIA)
+        berlinClock.setTimeZone(TimeZone.BERLIN)
         spbClock.setTimeZone(TimeZone.SPB)
     }
 }

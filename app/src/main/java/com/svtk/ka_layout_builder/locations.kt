@@ -7,7 +7,7 @@ data class Location(
 )
 
 val locations = listOf(
-        Location("Philadelphia", TimeZone.PHILADELPHIA, R.id.philadelphia),
+        Location("Berlin", TimeZone.BERLIN, R.id.berlin),
         Location("Saint Petersburg", TimeZone.SPB, R.id.spb),
         Location("Kotlin (island)", TimeZone.SPB, R.id.kotlin)
 )

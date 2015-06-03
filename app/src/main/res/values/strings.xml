@@ -2,7 +2,7 @@
 <resources>
 
     <string name="app_name">Locations</string>
-    <string name="philadelphiaTime">Philadelphia</string>
+    <string name="berlinTime">Berlin</string>
     <string name="spbTime">Saint Petersburg</string>
     <string name="kotlinTime">Kotlin</string>
 
