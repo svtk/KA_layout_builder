@@ -1,7 +1,5 @@
 package com.svtk.ka_layout_builder
 
-import org.jetbrains.anko.text
-
 val locations = arrayListOf(
         Location("Berlin", TimeZone.BERLIN),
         Location("Saint Petersburg", TimeZone.SPB)

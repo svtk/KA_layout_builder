@@ -3,14 +3,14 @@ package com.svtk.ka_layout_builder
 import android.app.Activity
 import org.jetbrains.anko.*
 
-private fun Activity.showAreYouSureAlert(process: () -> Unit) {
+fun Activity.showAreYouSureAlert(process: () -> Unit) {
     alert("Are you sure you really need another location?", "Are you sure?") {
         positiveButton("Yes") { process() }
         negativeButton("No") { }
     }.show()
 }
 
-private fun Activity.showAddLocationAlert() {
+fun Activity.showAddLocationAlert() {
     alert {
         customView {
             verticalLayout {
