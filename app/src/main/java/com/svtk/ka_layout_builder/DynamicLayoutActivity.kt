@@ -19,9 +19,9 @@ public class DynamicLayoutActivity : Activity() {
                 for (location in locations) {
                     tableRow {
                         textView(text = location.name)
-                                .layoutParams(column = 1)
+                                .lparams(column = 1)
 
-                        val textClock = textClock().layoutParams(column = 2) {
+                        val textClock = textClock().lparams(column = 2) {
                             leftMargin = dip(20)
                         }
 
